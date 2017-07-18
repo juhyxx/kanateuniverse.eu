@@ -8,8 +8,6 @@ $color4: #7BA4A8;
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
-
 body {
 	padding: 0;
 	margin: 0;
@@ -26,9 +24,9 @@ body {
 		}
 	}
 	nav {
-		position: absolute;
+		position: fixed;
 		width: 100%;
-		background-color: rgba($color2, 0.5);
+		background-color: rgba($color2, 0.7);
 		div {
 			display: flex;
 			justify-content:space-between;
@@ -74,7 +72,7 @@ body {
 		background-size: cover;
 		background-position: center;
 		padding: 1rem;
-		padding-top:20rem;
+		padding-top:50vh;
 		text-transform: uppercase;
 		& {
 			span {
