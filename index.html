@@ -4,24 +4,24 @@
 		<meta charset="utf-8">
 		<title>Kanate Universe s.r.o.</title>
 		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<main>
-			<header>
+		<script>
+			function selectLang(lang) {
+				document.body.setAttribute('lang', lang);
+			}
 
+		</script>
+	</head>
+	<body lang=cs>
+		<main>
+			<nav>
+				<section lang=cs onclick="selectLang('en')">English</section>
+				<section lang=en onclick="selectLang('cs')">Česky</section>
+			</nav>
+			<header>
 			</header>
 
-			<!--nav id="menu">
-				<div>
-					<h1>Kanate Universe  s.r.o.</h1>
-					<a href="#o-nas"><span>O nás</span></a>
-					<a href="#sluzby"><span>Služby</span></a>
-					<a href="#kontakt"><span>Kontakt</span></a>
-				</div>
-			</nav-->
-
 			<article id="sluzby">
-				<section>
+				<section lang=cs>
 					<h1><span>Služby</span></h1>
 					<section class=column>
 							<h3>Bezpečnostní služby</h3>
@@ -45,11 +45,44 @@
 							</ul>
 					</section>
 				</section>
+				<section lang=en>
+					<h1><span>Services</span></h1>
+					<section class=column>
+							<h3>Security services</h3>
+							<ul>
+								<li>Fyzická ostraha</li>
+								<li>Detektivní služby</li>
+								<li>Pořadatelské služby</li>
+							</ul>
+							<h3>Komplexní zajištění BOZP a PO</h3>
+							<ul>
+								<li>Komplexní řešení agendy BOZP a PO <q>na klíč</q></li>
+							</ul>
+							<h3>Special services</h3>
+							<ul>
+								<li>Bodyguarding</li>
+								<li>Kontrola dočasně práce neschopných</li>
+								<li>Doručování zásilek osobám vyhybajícím se převzetí</li>
+								<li>Sebeobrana pro ženy</li>
+								<li>Teambuilding</li>
+								<li>Ochrana proti monitorování </li>
+							</ul>
+					</section>
+				</section>
 			</article>
 
 			<article id="o-nas">
-				<section>
+				<section lang=cs>
 					<h1><span>O nás</span></h1>
+					<section>
+						<p>Jsme ryze česká bezpečností firma, jejímž kritériem je bezpečnost, jistota a flexibilita. </p>
+						<p>Náš tým je složen z bývalých profesionálů dříve působících v ozbrojených složkách České republiky. Klademe důraz na kvalitní, profesionální práci spojenou s rychlou a pružnou reakcí dle konkrétních požadavků zákazníků.</p>
+						<p>Jsme si vědomi, že vedle firemního know-how a důsledné zpětné vazby při každém projektu, jsou naši zaměstnanci tím, kdo nás reprezentuje v první linii, a proto je primárně kladen důraz nejen na profesní kvality, ale i na osobní vzhled a přístup každého jednotlivce. Jsme silní a výkonní tak, jako náš nejslabší článek a proto dbáme na průběžné zdokonalování.</p>
+						<p>Naše firma nevyužívá reklamy či jiné propagace, působíme pouze na doporučení.</p>
+					</section>
+				</section>
+				<section lang=en>
+					<h1><span>About</span></h1>
 					<section>
 						<p>Jsme ryze česká bezpečností firma, jejímž kritériem je bezpečnost, jistota a flexibilita. </p>
 						<p>Náš tým je složen z bývalých profesionálů dříve působících v ozbrojených složkách České republiky. Klademe důraz na kvalitní, profesionální práci spojenou s rychlou a pružnou reakcí dle konkrétních požadavků zákazníků.</p>
@@ -61,8 +94,18 @@
 
 
 			<article id="kontakt">
-				<section>
+				<section lang=cs>
 					<h1><span>Kontakt</span></h1>
+					<section>
+						<h2>Kanate Universe s.r.o.</h2>
+						<p><i class="fa fa-map-marker"></i> Marešova 643/6, Černý Most, 198 00 Praha 9</p>
+						<p>DIČ: CZ05100984</p>
+						<p><i class="fa fa-phone"></i> +420 720 027 974</p>
+						<p><i class="fa fa-envelope"></i> <a href="mailto:tomas.burian@kanateuniverse.eu">tomas.burian@kanateuniverse.eu</a></p>
+					</section>
+				</section>
+				<section lang=en>
+					<h1><span>Contact</span></h1>
 					<section>
 						<h2>Kanate Universe s.r.o.</h2>
 						<p><i class="fa fa-map-marker"></i> Marešova 643/6, Černý Most, 198 00 Praha 9</p>

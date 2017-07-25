@@ -14,6 +14,16 @@ body {
 	background-color: $color1;
 	color: $color3;
 }
+body[lang=cs] {
+	*[lang=en] {
+		display: none;
+	}
+}
+body[lang=en] {
+	*[lang=cs] {
+		display: none;
+	}
+}
 
 h1{
 	font-family: 'Josefin Sans', sans-serif;
@@ -47,6 +57,19 @@ article, header {
 	min-height: 100vh;
 		border-bottom: 1px dotted darken($color2, 10%);
 }
+nav {
+	padding: 0.5rem;
+	background-color: $color2;
+	position: fixed;
+	right: -16px;
+	border:1px solid rgba(white, 0.5);
+	transform: rotate(-90deg);
+	top: 50%;
+	box-shadow: 0 0 3px black;
+	z-index: 100;
+	cursor: pointer;
+}
+
 article {
 	background-color: $color1;
 	padding: 2rem;
@@ -111,7 +134,7 @@ h1 {
 }
 
 footer {
-	background-color: $color1;
+	background-color: darken($color1, 5%);
 
 	padding: 2rem;
 	section {

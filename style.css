@@ -6,6 +6,12 @@ body {
   background-color: #303c4f;
   color: #C0CDE0; }
 
+body[lang=cs] *[lang=en] {
+  display: none; }
+
+body[lang=en] *[lang=cs] {
+  display: none; }
+
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   color: #ff7f2a;
@@ -35,6 +41,18 @@ a {
 article, header {
   min-height: 100vh;
   border-bottom: 1px dotted #f66200; }
+
+nav {
+  padding: 0.5rem;
+  background-color: #ff7f2a;
+  position: fixed;
+  right: -16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(-90deg);
+  top: 50%;
+  box-shadow: 0 0 3px black;
+  z-index: 100;
+  cursor: pointer; }
 
 article {
   background-color: #303c4f;
@@ -86,7 +104,7 @@ h1 {
   font-size: 5rem; }
 
 footer {
-  background-color: #303c4f;
+  background-color: #26303f;
   padding: 2rem; }
   footer section {
     display: flex;
