@@ -1,0 +1,136 @@
+$color1: #DDDEDE;
+$color2: #232122;
+$color3: white;
+$color4: #7BA4A8;
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	padding: 0;
+	margin: 0;
+	background: $color1;
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(black, 0.7);
+	article {
+		min-height: 100vh;
+
+		&>section {
+			max-width: 800px;
+			margin: auto;
+			padding: 1rem;
+		}
+	}
+	nav {
+		position: fixed;
+		width: 100%;
+		background-color: rgba($color2, 0.7);
+		div {
+			display: flex;
+			justify-content:space-between;
+			max-width: 800px;
+			margin: auto;
+			margin-top: 0.5rem;
+			flex-wrap: wrap;
+		}
+		padding: 0.5rem;
+		h1 {
+			font-size: 1rem;
+			padding: 0;
+			margin: 0;
+			margin-right: 1rem;
+			margin-bottom: 0.5rem;
+			color: $color3;
+			flex-grow: 2;
+			white-space: nowrap;
+		}
+		a {
+			white-space: nowrap;
+			margin-right: 1rem;
+			margin-bottom: 0.5rem;
+			color: white;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	h2 , h3{
+		color: $color4;
+		font-family: 'Anton', sans-serif;
+		font-weight: 400;
+    	font-style: normal;
+		margin-bottom: 0;
+	}
+	h2 {
+		border: 1px solid gray;
+		color: $color3;
+		margin: 0;
+		font-size: 3rem;
+		background-size: cover;
+		background-position: center;
+		padding: 1rem;
+		padding-top:50vh;
+		text-transform: uppercase;
+		& {
+			span {
+				text-shadow: 0 0 5px black;
+				display: block;
+				max-width: 800px;
+				margin: auto;
+			}
+		}
+	}
+}
+
+#sluzby {
+	h2 {
+		background-image: url(photo/1.jpg);
+	}
+}
+#o-nas {
+	h2 {
+		background-image: url(photo/4.jpg);
+
+	}
+}
+#kontakt {
+	h2 {
+		background-image: url(photo/7.jpg);
+
+	}
+}
+main {
+	margin: auto;
+}
+footer {
+	background-color: $color2;
+	padding-bottom: 0;
+	color: rgba(white, 0.8);
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1rem;
+	a {
+		color: white;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	span {
+		margin: 1rem;
+		white-space: nowrap;
+	}
+}
+.column {
+	display: flex;
+	flex-wrap: wrap;
+	&>* {
+		min-width: 200px;
+		flex-grow: 1;
+		flex-basis: 0;
+	}
+}

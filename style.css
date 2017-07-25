@@ -1,102 +1,68 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 body {
-  padding: 0;
   margin: 0;
-  background: #DDDEDE;
   font-family: 'Open Sans', sans-serif;
-  color: rgba(0, 0, 0, 0.7); }
-  body article {
-    min-height: 100vh; }
-    body article > section {
-      max-width: 800px;
-      margin: auto;
-      padding: 1rem; }
-  body nav {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(35, 33, 34, 0.7);
-    padding: 0.5rem; }
-    body nav div {
-      display: flex;
-      justify-content: space-between;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 0.5rem;
-      flex-wrap: wrap; }
-    body nav h1 {
-      font-size: 1rem;
-      padding: 0;
-      margin: 0;
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
-      color: white;
-      flex-grow: 2;
-      white-space: nowrap; }
-    body nav a {
-      white-space: nowrap;
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
-      color: white;
-      text-decoration: none; }
-      body nav a:hover {
-        text-decoration: underline; }
-  body h2, body h3 {
-    color: #7BA4A8;
-    font-family: 'Anton', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0; }
-  body h2 {
-    border: 1px solid gray;
-    color: white;
-    margin: 0;
-    font-size: 3rem;
-    background-size: cover;
-    background-position: center;
-    padding: 1rem;
-    padding-top: 50vh;
-    text-transform: uppercase; }
-    body h2 span {
-      text-shadow: 0 0 5px black;
-      display: block;
-      max-width: 800px;
-      margin: auto; }
+  background-color: #303c4f;
+  color: #C0CDE0; }
 
-#sluzby h2 {
-  background-image: url(photo/1.jpg); }
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ff7f2a;
+  margin-bottom: 0;
+  white-space: nowrap;
+  margin-right: 2rem; }
 
-#o-nas h2 {
-  background-image: url(photo/4.jpg); }
+h2 {
+  font-family: 'Josefin Sans', sans-serif; }
 
-#kontakt h2 {
-  background-image: url(photo/7.jpg); }
+header {
+  background-image: url("logo.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
-main {
-  margin: auto; }
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+article, header {
+  min-height: 100vh;
+  border-bottom: 1px solid #f66200; }
+
+article {
+  background-color: #303c4f;
+  padding: 2rem;
+  line-height: 2rem;
+  display: flex; }
+  article > section {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center; }
+    article > section section {
+      border-left: 1px solid white;
+      padding-left: 2rem; }
+  article:nth-child(2n) {
+    background-color: #3d4d65; }
+
+i {
+  color: #ff7f2a; }
+
+h1 {
+  font-size: 5rem; }
 
 footer {
-  background-color: #232122;
-  padding-bottom: 0;
-  color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem; }
-  footer a {
-    color: white;
-    text-decoration: none; }
-    footer a:hover {
-      text-decoration: underline; }
-  footer span {
-    margin: 1rem;
-    white-space: nowrap; }
-
-.column {
-  display: flex;
-  flex-wrap: wrap; }
-  .column > * {
-    min-width: 200px;
-    flex-grow: 1;
-    flex-basis: 0; }
+  background-color: #303c4f;
+  padding: 2rem; }
+  footer section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto; }
+    footer section span {
+      white-space: nowrap;
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
