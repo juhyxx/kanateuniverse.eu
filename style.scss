@@ -59,15 +59,26 @@ article, header {
 }
 nav {
 	padding: 0.5rem;
-	background-color: $color2;
+	background-color: rgba($color2, 0.5);
 	position: fixed;
-	right: -16px;
+	right: -30px;
 	border:1px solid rgba(white, 0.5);
 	transform: rotate(-90deg);
 	top: 50%;
 	box-shadow: 0 0 3px black;
+	text-shadow: 1px 0 0px rgba(black, 0.2);
 	z-index: 100;
 	cursor: pointer;
+	transition: background-color 0.5s, right 0.5s;
+	border-top-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	&:hover {
+		right: -16px;
+		background-color: $color2;
+	}
+
 }
 
 article {
