@@ -8,14 +8,20 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 		<script>
-			function selectLang(lang) {document.body.setAttribute('lang', lang);}
+			var langDictionary = {
+				cs: 'en',
+				en: 'cs'
+			}
+			function toggleLang() {
+				document.body.setAttribute('lang', langDictionary[document.body.getAttribute('lang')]);
+			}
 		</script>
 	</head>
 	<body lang=cs>
 		<main>
-			<nav>
-				<section lang=cs onclick="selectLang('en')">English</section>
-				<section lang=en onclick="selectLang('cs')">Česky</section>
+			<nav onclick="toggleLang()">
+				<section lang=cs >English</section>
+				<section lang=en>Česky</section>
 			</nav>
 			<header>
 			</header>
